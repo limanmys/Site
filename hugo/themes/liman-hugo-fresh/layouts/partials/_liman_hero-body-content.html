@@ -1,0 +1,63 @@
+{{- $hero       := .Site.Params.hero }}
+{{- $title      := index $hero "title" }}
+{{- $subtitle   := index $hero "subtitle" }}
+{{- $buttons := index $hero "buttons" }}
+{{- $buttonText := index $hero "buttontext" }}
+{{- $buttonLink := index $hero "buttonlink" }}
+{{- $image      := index $hero "image" }}
+{{- $logos      := index $hero "logos" }}
+
+
+  {{- range $logos }}
+
+    <img src="{{ printf "/images/%s" .image | relURL }}" alt="" style="
+    vertical-align: middle;
+    margin-bottom: 15px;
+    padding-right: {{- if .paddingRight }} {{ .paddingRight}} {{- else }} 15px {{- end }};
+    padding-left: {{- if .paddingLeft }} {{ .paddingLeft}} {{- else }} 15px {{- end }};
+    height: {{- if .height }} {{ .height}} {{- else }} 75px {{- end }}">
+
+    {{ if .side }}
+
+    {{ else }}
+    <br>
+    {{- end }}
+
+  {{- end }}
+
+
+<h1 class="title is-1 is-bold is-spaced" style="
+-webkit-text-shadow: -2px 2px #000;
+-moz-text-shadow: -2px 2px #000;
+text-shadow: -2px 2px #000;
+">
+  {{ $title }}
+</h1>
+{{ with $subtitle | safeHTML }}
+<h2 class="subtitle is-5 is-muted" style="
+-webkit-text-shadow: -1px 1px #000;
+-moz-text-shadow: -1px 1px #000;
+text-shadow: -1px 1px #000;
+">
+  {{ . }}
+</h2>
+{{ end }}
+<p>
+
+  {{- range $buttons }}
+
+  <a class="button cta primary-btn raised" href="{{ .buttonlink }}" style="
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(100, 100, 255, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(100, 100, 255, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(100, 100, 255, 0.5);
+  margin: 12px;
+  ">
+    {{ .buttontext }}
+  </a>
+  {{- end }}
+
+</p>
+
+<div style="display: flex; text-align: center; margin-top: 0px;margin-bottom: -100px; color: white;" >
+{{ partial "_liman_tskgv-marker.html" . }}
+</div>

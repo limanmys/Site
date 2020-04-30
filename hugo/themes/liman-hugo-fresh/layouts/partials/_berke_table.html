@@ -1,0 +1,59 @@
+{{- $_berke_table := .Site.Params._berke_table }}
+{{- $title    := index $_berke_table "title" }}
+{{- $subtitle := index $_berke_table "subtitle" }}
+{{- $header := index $_berke_table "header" }}
+{{- $row := index $_berke_table "row" }}
+<section class="section section-feature-white is-medium" id="anchor-section-table">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+
+          <div class="blueTable-container" data-animation="fadeInRight">
+
+
+<table class="blueTable">
+<thead>
+<tr>
+
+{{- range $header }}
+<th>{{ .head }}</th>
+{{- end }}
+
+</tr>
+</thead>
+<tbody>
+
+{{- range $row }}
+<tr>
+
+<td><b>{{ .title }}</b></td>
+
+{{- range .columns }}
+
+  {{- if .text }}
+    <td class="symbol">{{ .text }}</td>
+  {{- else if .tick }}
+    <td class="symbol"><span class="icon" style="color: #0b0;"><i class="fa fa-check"></i></span></td>
+  {{- else if .conditional }}
+    <td class="symbol"><span class="icon" style="color: #0b0;;"><i class="fa fa-circle"></i></span></td>
+  {{- else }}
+    <td class="symbol"><span class="icon" style="color: red;"><i class="fa fa-times"></i></span></td>
+  {{- end }}
+
+{{- end }}
+
+</tr>
+{{- end }}
+
+</tbody>
+</tr>
+</table>
+
+    </div>
+  </div>
+</section>

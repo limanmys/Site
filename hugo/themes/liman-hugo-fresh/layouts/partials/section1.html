@@ -1,0 +1,46 @@
+{{- $section1   := .Site.Params.section1 }}
+{{- $title      := index $section1 "title" }}
+{{- $subtitle   := index $section1 "subtitle" }}
+{{- $image      := index $section1 "image" }}
+
+<section class="section section-feature-grey is-medium" id="anchor-section1">
+  <div class="container">
+
+    <div class="columns">
+      <div class="column">
+
+        <div class="title-wrapper has-text-centered">
+          <h2 class="title is-2">{{ $title }}</h2>
+          <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+        </div>
+
+        <div class="has-text-centered">
+        
+        {{- if $image  }}
+        <div id="gallery-{{ $image }}" >
+        <ul class="pictures columns is-mobile is-centered is-multiline is-vcentered">
+
+        <li class="column is-full">
+        <img style="cursor: pointer;" src="{{ printf "/images/%s" $image | relURL }}"  id="image">
+        </li>
+        </div>
+        </ul>
+
+         <script>
+
+        window.addEventListener('DOMContentLoaded', function () {
+          var galley = document.getElementById('gallery-{{ $image }}');
+          var viewer = new Viewer(galley, {
+            navbar: false
+          });
+        });
+
+        </script>
+        {{- end }}
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

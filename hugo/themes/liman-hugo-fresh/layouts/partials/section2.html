@@ -1,0 +1,46 @@
+{{- $section2 := .Site.Params.section2 }}
+{{- $title    := index $section2 "title" }}
+{{- $subtitle := index $section2 "subtitle" }}
+{{- $tiles    := index $section2 "tiles" }}
+
+<section class="{{- if $title }} is-medium {{- end }}" id="anchor-section2">
+  <div class="container">
+    {{- if $title }}
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+    {{- end }}
+    <div class="content-wrapper">
+      <div class="columns">
+        {{- range $tiles }}
+        <div class="column is-one-third card-container">
+
+          <div class="feature-card is-bordered has-text-centered xrevealOnScroll xdelay-1" data-animation="xfadeInLeft">
+
+
+            <div class="card-title">
+              <a {{- if .url }} href="{{ .url | relURL }}" {{- end }}>
+              <h4>{{ .title }}</h4>
+            </div>
+
+            <div class="card-text">
+                <p>{{ .text | safeHTML }}</p>
+            </div>
+
+            <div class="card-icon">
+                {{if .icon }}<img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}">{{end}}
+                {{if .faicon }}<i class="fa fa-{{ .faicon }}"></i>{{end}}
+            </div>
+            </a>
+
+
+          </div>
+
+        </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>

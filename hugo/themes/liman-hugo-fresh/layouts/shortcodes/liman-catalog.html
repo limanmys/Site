@@ -1,0 +1,28 @@
+
+{{- if eq (.Get 0) "create" }}
+
+<div id="gallery-{{ .Get 1 }}" >
+<ul class="pictures columns is-mobile is-centered is-multiline is-vcentered">
+
+{{- else if eq (.Get 0) "add" }}
+<li class="column is-3">
+<img style="cursor: pointer;border: 1px solid #e0e0e0;" src="{{ printf "/images/" | relURL }}{{ .Get 1 }}"  id="image" alt="Resim">
+</li>
+
+{{- else if eq (.Get 0) "end" }}
+</div>
+</ul>
+
+ <script>
+
+window.addEventListener('DOMContentLoaded', function () {
+  var galley = document.getElementById('gallery-{{ .Get 1 }}');
+  var viewer = new Viewer(galley, {
+    title: function (image) {
+      return image.alt + ' (' + (this.index + 1) + '/' + this.length + ')';
+    },
+  });
+});
+
+</script>
+{{- end }}

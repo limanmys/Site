@@ -1,0 +1,34 @@
+/* ==========================================================================
+Hero styles
+========================================================================== */
+
+.hero-body {
+    padding-bottom: 6rem;
+    .title, .subtitle {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .title {
+        &.is-bold {
+            font-weight: 700;
+            color: $white
+        }
+    }
+    .subtitle {
+        &.is-muted {
+            color: $white;
+        }
+    }
+}
+
+.hero-foot {
+    //margin-top: -115px;
+    //background-image: linear-gradient(180deg, rgba(2,0,36,0) 25%, rgba(255,255,255,.5) 100%);  content: '';
+    img.partner-logo {
+        min-height: 65px;
+        max-height: 80px;
+    }
+    p {
+        min-width: 100px;
+        padding: 10px;
+    }
+}

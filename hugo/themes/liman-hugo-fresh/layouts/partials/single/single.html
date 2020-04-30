@@ -1,0 +1,8 @@
+<section class="hero is-default is-bold">
+{{ partial "navbar.html" . }}
+{{ partial "navbar-clone.html" . }}
+{{ if .Site.Params.hero }}
+{{ partial "_liman_hero-body-subpage.html" . }}
+{{ end }}
+</section>
+{{ partial "single/content.html" . }}

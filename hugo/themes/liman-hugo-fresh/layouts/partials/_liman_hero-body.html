@@ -1,0 +1,27 @@
+{{- $hero       := .Site.Params.hero }}
+{{- $image      := index $hero "image" }}
+{{- $cover_image      := index $hero "cover_image" }}
+<div style="
+    background: url('{{ printf "/images/%s" $cover_image | relURL }}');
+    background-repeat: no-repeat;
+    background-size: cover;
+"
+class="hero-body">
+
+  <div class="container">
+    <div class="columns" style="">
+      <div class="column is-9 is-offset-0 landing-caption">
+ 
+      {{ partial "_liman_hero-body-content.html" . }}
+
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="image">
+          {{- if $image }}
+          <img src="{{ printf "/images/%s" $image | relURL }}" alt="">
+          {{- end }}
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>

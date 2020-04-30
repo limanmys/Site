@@ -1,0 +1,3 @@
+<div class="{{ if .Get 2 }} {{.Get 2}} {{else}} has-text-centered {{end}}">
+<a class="button cta is-large primary-btn raised is-clear" href="{{ .Get 0 | relURL }}">{{ .Get 1 }}</a>
+</div>

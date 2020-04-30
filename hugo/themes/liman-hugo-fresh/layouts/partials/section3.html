@@ -1,0 +1,54 @@
+{{- $section3 := .Site.Params.section3 }}
+{{- $title    := index $section3 "title" }}
+{{- $subtitle := index $section3 "subtitle" }}
+{{- $features := index $section3 "features" }}
+<section class="section is-medium section-feature-grey" id="anchor-section3">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">{{ $title }}</h1>
+        <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="column is-9 mt-0">
+        {{- range $features }}
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <span class="icon" style="margin-top: 15px; padding-right: 10px; font-size: 25px;"><i class="fa fa-{{ .icon }}">  </i></span>
+            </p>
+          </figure>
+          <div class="media-content mt-0">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">{{ .title }}</span>
+              </p>
+              <div class="columns">
+                {{- range .columns }}
+                <div class="column is-centered-tablet-portrait">
+                  
+                  {{- if .text }}
+                  <p>
+                    <span class="icon-box-text">{{ .text | markdownify }}</span>
+                  </p>
+                  {{- end }}
+
+                  {{- if .list }} <ul> {{- end }}
+
+                    {{- range .list }}
+                    <li>{{ .li | markdownify }}</li>
+                    {{- end }}
+
+                  {{- if .list }} </ul> {{- end }}
+
+                </div>
+                {{- end }}
+              </div>
+            </div>
+          </div>
+        </article>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>
