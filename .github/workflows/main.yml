@@ -49,8 +49,8 @@ jobs:
     
     - name: Git
       run: |
-        git config --global user.email "${{ secrets.email }}"
-        git config --global user.name "${{ secrets.username }}"
+        git config --global user.email "${{ github.event.pusher.name }}"
+        git config --global user.name "${{ github.event.pusher.email }}"
         git remote set-url origin https://x-access-token:${{ secrets.api_token }}@github.com/${{ github.repository }}.git
         git fetch
         git remote show origin
