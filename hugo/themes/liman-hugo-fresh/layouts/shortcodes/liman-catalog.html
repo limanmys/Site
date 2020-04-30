@@ -6,7 +6,7 @@
 
 {{- else if eq (.Get 0) "add" }}
 <li class="column is-3">
-<img style="cursor: pointer;border: 1px solid #e0e0e0;" src="{{ printf "/images/" | relURL }}{{ .Get 1 }}"  id="image" alt="Resim">
+<img class="image-viewer catalog" src="{{ printf "/images/" | relURL }}{{ .Get 1 }}"  id="image" alt="Resim">
 </li>
 
 {{- else if eq (.Get 0) "end" }}

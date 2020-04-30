@@ -17,11 +17,11 @@
         <div class="has-text-centered">
         
         {{- if $image  }}
-        <div id="gallery-{{ $image }}" >
+        <div id="gallery-{{ $image }}">
         <ul class="pictures columns is-mobile is-centered is-multiline is-vcentered">
 
         <li class="column is-full">
-        <img style="cursor: pointer;" src="{{ printf "/images/%s" $image | relURL }}"  id="image">
+        <img class="image-viewer single" src="{{ printf "/images/%s" $image | relURL }}"  id="image">
         </li>
         </div>
         </ul>

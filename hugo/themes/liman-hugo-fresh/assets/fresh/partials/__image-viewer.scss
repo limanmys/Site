@@ -1,0 +1,24 @@
+.image-viewer{
+    transition: all 0.125s ease;
+    cursor: pointer;
+}
+
+.image-viewer.single {
+
+}
+
+.image-viewer.single:hover {
+    box-shadow: 0px 4px 8px rgba(31, 73, 125, 0.25);
+  -moz-box-shadow: 0px 4px 8px rgba(31, 73, 125, 0.25);
+  -webkit-box-shadow: 0px 4px 8px rgba(31, 73, 125, 0.25);
+}
+
+.image-viewer.catalog{
+    border: 1px solid #e0e0e0;
+}
+
+.image-viewer.catalog:hover {
+    box-shadow: 0px 4px 8px rgba(31, 73, 125, 0.25);
+  -moz-box-shadow: 0px 4px 8px rgba(31, 73, 125, 0.25);
+  -webkit-box-shadow: 0px 4px 8px rgba(31, 73, 125, 0.25);
+}

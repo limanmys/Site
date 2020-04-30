@@ -7,11 +7,13 @@
   margin-left: 20px;
   padding-left: 30px;
   box-shadow: 4px 0px 4px rgba(31, 73, 125, 0.25) inset;
+  -moz-box-shadow: 4px 0px 4px rgba(31, 73, 125, 0.25) inset;
+  -webkit-box-shadow: 4px 0px 4px rgba(31, 73, 125, 0.25) inset;
   ">
     <div class="tabs" style="align-items: center; display: inline-block;">
       <ul>
         {{- range $clientLogos }}
-        <li style="padding-right: 20px; opacity: 60%; -webkit-filter: grayscale(60%); filter: grayscale(60%);">
+        <li style="padding-right: 20px; opacity: 60%; -webkit-filter: grayscale(60%); filter: grayscale(60%); -moz-filter: grayscale(60%);">
           <p>
             <img style="height: 30px" src="{{ printf "/images/logos/clients/%s.svg" . | relURL }}" >
           </p>
