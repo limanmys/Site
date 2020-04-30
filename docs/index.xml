@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Liman MYS | HAVELSAN Açıklab</title>
-    <link>https://berkekaragoz.github.io/LimanWeb/</link>
+    <link>https://limanmys.github.io/Site/</link>
     <description>Recent content on Liman MYS | HAVELSAN Açıklab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>tr-tr</language>
     
-	<atom:link href="https://berkekaragoz.github.io/LimanWeb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://limanmys.github.io/Site/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://berkekaragoz.github.io/LimanWeb/demo-isteyin/</link>
+      <link>https://limanmys.github.io/Site/demo-isteyin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://berkekaragoz.github.io/LimanWeb/demo-isteyin/</guid>
+      <guid>https://limanmys.github.io/Site/demo-isteyin/</guid>
       <description>Ücretsiz Demo İsteyin! BT süreçlerinizi aksaklığa sebep olmadan kavram ispat çalışması sunuyoruz. Pardus Göç Projelerinizi ilk adımını risk almadan Liman MYS ile başlatabilirsiniz. Kavram ispat çalışması sonrası 15 gün ücretsiz deneme sürümünü sizlerde test edebilirsiniz.   Kurum adı:  İsim ve soyisim:  Telefon:  Kurum Adresi:  Mesaj:        </description>
     </item>
     
     <item>
       <title>Liman MYS Kurulumu</title>
-      <link>https://berkekaragoz.github.io/LimanWeb/kurulum/</link>
+      <link>https://limanmys.github.io/Site/kurulum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://berkekaragoz.github.io/LimanWeb/kurulum/</guid>
+      <guid>https://limanmys.github.io/Site/kurulum/</guid>
       <description>§1 Lorem -- Liman MYS&amp;rsquo;ni kurulumunu sağlayacağımız .deb paketi ile gerçekleşir .Bu paket sizin icin kurulum, guncelleme ve sistem için gerekli optimizasyonlari kısa sürede tamamlayacaktir. LimanMYS ülkemizin dağınık organizasyonlarına sahip ve bütün yerleşim yerlerlerinde birimi olan kurumlarımızın BT süreçlerine dahil olunarak kavram ispat çalışmaları tamamlanmıştır.     window.addEventListener(&#39;DOMContentLoaded&#39;, function () { var galley = document.getElementById(&#39;gallery-liman-mys-kurulum.png&#39;); var viewer = new Viewer(galley, { navbar: false }); });  Özel Demo İsteyin!</description>
     </item>
     
     <item>
       <title>Liman MYS&#39;de Politikalar</title>
-      <link>https://berkekaragoz.github.io/LimanWeb/politikalar-ve-eklentiler/</link>
+      <link>https://limanmys.github.io/Site/politikalar-ve-eklentiler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://berkekaragoz.github.io/LimanWeb/politikalar-ve-eklentiler/</guid>
+      <guid>https://limanmys.github.io/Site/politikalar-ve-eklentiler/</guid>
       <description>§1 Lorem -- Linux işletim sistemine sahip istemcileri ve kullanıcıları belirlenen ve ihtiyaç duyulan kurallara bağlı olarak olarak uzaktan merkezi olarak yönetme imkanı sağlar. Politikilarımız özellikle BT işletimini gerçekleştiren sistem yöneticilerinin ihtiyaçları tespit edilerek geliştirilmiştir. Politikalarımız ile kullanıcılarınızın, istemcilerinizin, sunucularınızın güncel, stabil ve güvenilir olmasını sağlarsınız.     window.addEventListener(&#39;DOMContentLoaded&#39;, function () { var galley = document.getElementById(&#39;gallery-politikalar-ve-eklentiler\/liman-mys-genis-petek.jpg&#39;); var viewer = new Viewer(galley, { navbar: false }); });   Eklentiler  Liman MYS, eklentileri aracılığıyla Linux ve Windows sunucuları yönetir.</description>
     </item>
     
     <item>
       <title>Liman&#39;ın Mimarisi</title>
-      <link>https://berkekaragoz.github.io/LimanWeb/limanin-mimarisi/</link>
+      <link>https://limanmys.github.io/Site/limanin-mimarisi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://berkekaragoz.github.io/LimanWeb/limanin-mimarisi/</guid>
+      <guid>https://limanmys.github.io/Site/limanin-mimarisi/</guid>
       <description>hr.rounded { border-top: 4px solid #eee; border-radius: 6px; margin-top: 50px; margin-bottom: 50px; }  §1 Lorem -- Liman Merkezi Yönetim Sistemi adından anlaşılacağı üzere sunucuları, istemcileri ve kullanıcıları uzaktan merkezi olarak mevcut dizin yapınızdaki Grup Politika Objeleri (GPO) ve geliştirdiğimiz politikalar ile yönetmenizi sağlar.
     window.addEventListener(&#39;DOMContentLoaded&#39;, function () { var galley = document.getElementById(&#39;gallery-liman-mys-yapisi-sema.png&#39;); var viewer = new Viewer(galley, { navbar: false }); });  Liman MYS ile kullanımda olan dizinlerin (Samba, Aktif Dizin) entegrasyonu hizmetler kesintiye uğramadan sağlanmaktadır.</description>
     </item>
     
     <item>
       <title>Neden Liman Merkezi Yönetim Sistemi?</title>
-      <link>https://berkekaragoz.github.io/LimanWeb/neden-liman-mys/</link>
+      <link>https://limanmys.github.io/Site/neden-liman-mys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://berkekaragoz.github.io/LimanWeb/neden-liman-mys/</guid>
+      <guid>https://limanmys.github.io/Site/neden-liman-mys/</guid>
       <description>§1 Lorem -- Havelsan A.Ş. olarak 2016 yılında, Tübitak-Ulakbim ile Pardus işletim sistemi özelinde İş Birliği Protokolü imzalanmıştır. Protokolün amacı, Havelsan A.Ş. olarak kurumlarımızda Linux tabanlı işletim sistemimiz olan Pardus’un yaygınlaşmasını ve kamu BT hizmetlerinde açık kaynaklı alternatif çözümleri üretmektir. Protokol sonrası Havelsan A.Ş. yaklaşık 1 yıl kurumlarda neden Pardus dönüşümü gerçekleşemiyor sorusuna cevap aramıştır. Yapılan kurum analizleri, Pardus dönüşüm projelerinin gerçekleştirilememesinde ki birinci engelin, kurum bilgi işlem personellerinin Linux tabanlı işletim sistemlerini basit arayüzler yardımı ile yönetememesi olduğu sonucunu ortaya koymuştur.</description>
     </item>
     
