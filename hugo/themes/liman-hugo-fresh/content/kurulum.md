@@ -11,4 +11,4 @@ LimanMYS ülkemizin dağınık organizasyonlarına sahip ve bütün yerleşim ye
 <br><br>
 {{% liman-image-viewer "liman-mys-kurulum.png" "is-three-quarters" %}}
 <br>
-{{% liman-button "demo-isteyin" "Özel Demo İsteyin!" %}}
+{{% liman-button "/#anchor-section5" "Özel Demo İsteyin!" %}}
