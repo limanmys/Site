@@ -1,5 +1,4 @@
 name = "Modified Hugo Fresh for Liman MYS"
-license = "MIT"
 licenselink = "https://github.com/StefMa/hugo-fresh/blob/master/LICENSE.md"
 description = "A Hugo adaptation of the Fresh theme from CSS Ninja which is modified for Liman MYS by HAVELSAN Aciklab"
 homepage = "https://github.com/StefMa/hugo-fresh"
@@ -9,4 +8,4 @@ min_version = "0.45"
 
 [author]
   name = "E. Berke Karagöz | Stefan M."
-  homepage = "https://github.com/StefMa"
+  homepage = "https://github.com/BerkeKaragoz | https://github.com/StefMa"
