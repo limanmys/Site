@@ -26,7 +26,7 @@ Aktif Dizin ya da Samba Domain sunucularının yönetildiği eklentidir. Kullani
 
 Pardus ve Ubuntu tabanlı sunucularınıza Jitsi kurulumunu uzaktan gerçekleştirebilirsiniz. LDAP konfigürasyonu ile Jitsi odalarına yalnizca domain kullanıcılarının dahil olmasını sağlayabilirsiniz. Jitsi üzerinde konfigürasyon ayarları yaparak performans artışı sağlayabilir, arayüzünü düzenleyebilirsiniz.
 <br><br><br>
-{{% liman-image-viewer "politikalar-ve-eklentiler/liman-mys-dns-1.png" %}}
+{{% liman-image-viewer "politikalar-ve-eklentiler/liman-mys-jitsi.png" %}}
 <br><br>
 <hr>
 {{% title4 "DNS Eklentisi" %}}
