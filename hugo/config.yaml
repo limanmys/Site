@@ -61,10 +61,12 @@ params:
       relurl: "/#anchor-section-table"
     - title: Politikalar
       relurl: "/#anchor-section3"
+    - title: İletişim
+      relurl: "/iletisim"
   - title: Açıklab
     url: https://www.aciklab.com/
   - title: Ücretsiz Demo
-    relurl: "/#anchor-section5"
+    relurl: "/iletisim"
     button: true
   section1:
     title: Web Arayüzü
@@ -204,7 +206,7 @@ params:
             - li: Dosya Yetkileri Politikası
             - li: SSH Yönetim Politikası
   section5: false
-  _liman_contact_us: true
+  _liman_contact_us: false
   footer:
     # Logo (from /images/logos/___)
     logo: havelsan-aciklab.png
@@ -227,7 +229,7 @@ params:
         - text: Açıklab
           link: https://www.aciklab.com/
         - text: Demo İsteyin
-          relurl: "/#anchor-section5"
+          relurl: "/iletisim"
       column2:
         title: "Yakında"
         links:
