@@ -19,7 +19,7 @@ Liman MYS, eklentileri aracılığıyla Linux ve Windows sunucuları yönetir. E
 
 Aktif Dizin ya da Samba Domain sunucularının yönetildiği eklentidir. Kullanici, grup, istemci ve politika objelerini yönetebilir, Linux istemcilerine politika uygulatabilir; Pardus, Debian, Linux Mint, CentOS ve MacOS işletim sistemine sahip cihazlari <b>uzaktan mevcut domaininize dahil edebilirsiniz</b>.
 <br><br><br>
-{{% liman-image-viewer "illustrations/liman-mys-domain-1.png" %}}
+{{% liman-image-viewer "politikalar-ve-eklentiler/liman-mys-domain-1.png" %}}
 <br><br>
 <hr>
 {{% title4 "Jitsi Eklentisi" %}}
