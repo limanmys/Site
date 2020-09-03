@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://liman.havelsan.com.tr/kurulum/</guid>
-      <description>§1 Lorem -- Liman MYS&amp;rsquo;ni kurulumunu sağlayacağımız .deb paketi ile gerçekleşir .Bu paket sizin icin kurulum, guncelleme ve sistem için gerekli optimizasyonlari kısa sürede tamamlayacaktir. LimanMYS ülkemizin dağınık organizasyonlarına sahip ve bütün yerleşim yerlerlerinde birimi olan kurumlarımızın BT süreçlerine dahil olunarak kavram ispat çalışmaları tamamlanmıştır.     window.addEventListener(&#39;DOMContentLoaded&#39;, function () { var galley = document.getElementById(&#39;gallery-liman-mys-kurulum.png&#39;); var viewer = new Viewer(galley, { navbar: false }); });  Özel Demo İsteyin!</description>
+      <description>§1 Lorem -- Liman MYS&amp;rsquo;nin kurulumu sağlayacağımız .deb paketi ile gerçekleşir. Bu paket sizin için kurulum, güncelleme ve sistem için gerekli optimizasyonlari kısa sürede tamamlayacaktir. LimanMYS ülkemizin dağınık organizasyonlarına sahip ve bütün yerleşim yerlerlerinde birimi olan kurumlarımızın BT süreçlerine dahil olunarak kavram ispat çalışmalarını tamamlanmıştır.     window.addEventListener(&#39;DOMContentLoaded&#39;, function () { var galley = document.getElementById(&#39;gallery-liman-mys-kurulum.png&#39;); var viewer = new Viewer(galley, { navbar: false }); });  Özel Demo İsteyin!</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://liman.havelsan.com.tr/neden-liman-mys/</guid>
-      <description>§1 Lorem -- Havelsan A.Ş. olarak 2016 yılında, Tübitak-Ulakbim ile Pardus işletim sistemi özelinde İş Birliği Protokolü imzalanmıştır. Protokolün amacı, Havelsan A.Ş. olarak kurumlarımızda Linux tabanlı işletim sistemimiz olan Pardus’un yaygınlaşmasını ve kamu BT hizmetlerinde açık kaynaklı alternatif çözümleri üretmektir. Protokol sonrası Havelsan A.Ş. yaklaşık 1 yıl kurumlarda neden Pardus dönüşümü gerçekleşemiyor sorusuna cevap aramıştır. Yapılan kurum analizleri, Pardus dönüşüm projelerinin gerçekleştirilememesinde ki birinci engelin, kurum bilgi işlem personellerinin Linux tabanlı işletim sistemlerini basit arayüzler yardımı ile yönetememesi olduğu sonucunu ortaya koymuştur.</description>
+      <description>§1 Lorem -- Havelsan A.Ş. olarak 2016 yılında, Tübitak-Ulakbim ile Pardus işletim sistemi özelinde İş Birliği Protokolü imzalanmıştır. Protokolün amacı, Havelsan A.Ş. olarak kurumlarımızda Linux tabanlı işletim sistemimiz olan Pardus’un yaygınlaşmasını ve kamu BT hizmetlerinde açık kaynaklı alternatif çözümleri üretmektir. Protokol sonrası Havelsan A.Ş. yaklaşık 1 yıl kurumlarda neden Pardus dönüşümü gerçekleşemiyor sorusuna cevap aramıştır. Yapılan kurum analizleri, Pardus dönüşüm projelerinin gerçekleştirilememesindeki birinci engelin, kurum bilgi işlem personellerinin Linux tabanlı işletim sistemlerini basit arayüzler yardımı ile yönetememesi olduğu sonucunu ortaya koymuştur.</description>
     </item>
     
   </channel>
