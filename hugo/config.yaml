@@ -213,7 +213,7 @@ params:
     # Social Media Title
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/aciklab
+    - link: https://github.com/limanmys
       # Icons are from Font Awesome
       icon: github
     - link: https://www.aciklab.com/
