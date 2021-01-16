@@ -1,103 +1,101 @@
 baseURL: https://liman.havelsan.com.tr
 languageCode: tr-tr
 title: Liman MYS | HAVELSAN Açıklab
-theme: liman-hugo-fresh
-googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
-# Disables warnings
+theme: liman-hugo-v2
+googleAnalytics:
 disableKinds:
-- taxonomy
-- taxonomyTerm
+  - taxonomy
+  - taxonomyTerm
 markup:
   goldmark:
     renderer:
-      unsafe: true # Allows you to write raw html in your md files
-
-params:
-  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
-  openGraph: true
-  # Used as meta data; describe your site to make Google Bots happy 
-  description: HAVELSAN Liman Merkezi Yönetim Sistemi 
-  navbarlogo:
-  # Logo (from static/images/logos/___)
-    image: logos/logo-small.png
-    link: "/"
-  font:
-    name: "Open Sans"
-    sizes: [400,600]
-  hero:
-    # Main hero title
-    title: Merkezi Yönetim Sistemi
-    logos:
-      - image: logos/liman_logo-white.svg
-        height: 100px
-        paddingLeft: 0px;
-        side: true
-      - image: logos/havelsan-aciklab.png
-        height: 35px
-    # Hero subtitle (optional)
-    subtitle: BT süreçlerinizde bulunan bütün bileşenleri uzaktan, kararlı, güvenli ve genişletilebilir yöntemler ile merkezi olarak yönetmenizi sağlar.<br/><br/>Açık kaynak göç projelerinde Linux çekirdeğine sahip işletim sistemlerini ve diğer platformları Liman MYS ile yönetebilirsiniz.
-    # Button text
-    buttons:
-    # Where the main hero button links to
-    - buttontext: Neden Liman MYS?
-      buttonlink: "neden-liman-mys"
-    # Hero image (from static/images/___)
-    image: false
-    cover_image: hero-cover.jpg
-    # Footer logos (from static/images/logos/clients/___.svg)
-    clientlogos:
-    - debian
-    - ubuntu
-    - pardus
-  # Customizable navbar. For a dropdown, add a "sublinks" list.
-  navbar:
-  - title: Keşfedin
-    sublinks:
-    - title: Başlıca Özellikler
-      relurl: "/#anchor-section2"
-    - title: Web Arayüzü
-      relurl: "/#anchor-section1"
-    - title: Karşılaştırma
-      relurl: "/#anchor-section-table"
-    - title: Politikalar
-      relurl: "/#anchor-section3"
-    - title: İletişim
-      relurl: "/iletisim"
-  - title: Açıklab
+      unsafe: true
+menu:
+  main:
+  - identifier: home
+    name: "Ana Sayfa"
+    url: "/"
+    weight: 1
+  - identifier: about
+    name: "Keşfedin"
+    url: ""
+    weight: 2
+  - identifier: policies
+    name: "Politikalar"
+    parent: "about"
+    url: "/#policies"
+    weight: 3
+  - identifier: comparison
+    name: "Karşılaştırma"
+    parent: "about"
+    url: "/#comparison"
+    weight: 2
+  footer:
+  - identifier: diger
+    name: "Diğer"
+  - identifier: havelsan
+    parent: diger
+    name: HAVELSAN
+    url: https://www.havelsan.com.tr/
+  - identifier: aciklab
+    parent: diger
+    name: Açıklab
     url: https://www.aciklab.com/
-  - title: Ücretsiz Demo
-    relurl: "/iletisim"
-    button: true
-  section1:
-    title: Web Arayüzü
-    subtitle: Her yerden erişilebilir!
-    image: illustrations/liman_arayuz_resim.png
-  section2:
-    title: false
-    subtitle: false
-    tiles:
-    - title: Politikalar ve Eklentiler
-      faicon: cogs
-      text: Liman MYS kabiliyetleri politika ve eklenti başlıklarıyla değerlendirilir.
-      url: "politikalar-ve-eklentiler"
-    - title: Liman'ın Mimarisi
-      faicon: sitemap
-      text: İhtiyacınız olan bütün politikalar kararlı, güvenli, genişletilebilir methodlar ile sunulmaktadır.
-      url: "limanin-mimarisi"
-    - title: Kurulum
-      faicon: cloud-download
-      text: Hızlı ve kolay kurulum.
-      url: "kurulum"
-  _berke_table:
+  - identifier: links
+    name: "Yararlı Linkler"
+  - identifier: documentation
+    parent: links
+    name: Dökümantasyon
+    url: "https://api.liman.dev/"
+  - identifier: guide
+    parent: links
+    name: Rehber
+    url: "https://rehber.liman.dev/"
+params:
+  openGraph: true
+  description: HAVELSAN Liman Merkezi Yönetim Sistemi
+  navbarlogo:
+    main:
+      image: logo.svg
+    sub:
+      image: sub.svg
+  hero:
+    - title: Merkezi Yönetim Sistemi
+      subtitle: BT süreçlerinizde bulunan bütün bileşenleri uzaktan, kararlı, güvenli ve genişletilebilir yöntemler ile merkezi olarak yönetmenizi sağlar.<br/><br/>Açık kaynak göç projelerinde Linux çekirdeğine sahip işletim sistemlerini ve diğer platformları Liman MYS ile yönetebilirsiniz.
+      logos:
+        - image: "aciklab.png"
+      buttons:
+        - text: Neden Liman MYS?
+          link: "neden-liman-mys"
+      image: slide
+    - title: Liman Artık Açık Kaynak
+      subtitle: Liman MYS yazılımı açık kaynak bir yazılımdır ve herkese açıktır. Github sayfamızdan kodları görüntüleyebilir ve kullanmaya hemen başlayabilirsiniz.
+      logos:
+        - image: "aciklab.png"
+      buttons:
+        - text: Github
+          link: https://github.com/limanmys
+        - text: Kurulum
+          link: https://depo.aciklab.org/
+      image: liman-gorsel
+  section_about: 
+    video_link: "https://www.youtu.be/yZyScWN2IbQ"
+    thumbnail: video-holder.png
+    title: Liman Yönetimi
+    text: "PHP dili kullanılarak Laravel Frameworkü ile geliştirilmiştir. Liman MYS özellikleri eklenti olarak isimlendirdiğimiz paket yönetim sistemi baz alınarak tasarlandı.<br />
+    Liman MYS ile kullanımda olan dizinlerin (Samba, Aktif Dizin) entegrasyonu hizmetler kesintiye uğramadan sağlanmaktadır. <br />
+    Liman MYS'nin bileşenleri: Liman, Kaptan, Tayfa olarak üçe ayrılmıştır. Bu bileşenler, Liman MYS'nin kararlı ve güvenli olarak çalışmasını sağlar. <br />
+    Liman Mimari olarak yönetilecek uç birimlerde “C/ C++  ” programlama dili ile ile geliştirilmiş “Tayfa ” adında minimal kaynak tüketen ajanlarımız bulunmaktadır."
+  section_comparison:
     title: Karşılaştırma
     subtitle: HAVELSAN Liman MYS'nin özgünlükleri
     header:
-    - head:
-    - head: HAVELSAN Liman MYS
-    - head: Microsoft RSAT
-    - head: RedHat - FreeIPA / Ansible / Spacewalk
-    - head: Microsoft Windows Admin Center
-    - head: Canonical Landscape
+      - head:
+      - head: HAVELSAN Liman MYS
+      - head: Microsoft RSAT
+      - head: RedHat - FreeIPA / Ansible / Spacewalk
+      - head: Microsoft Windows Admin Center
+      - head: Canonical Landscape
     row:
       - title: Ajansız Linux Yönetimi
         columns:
@@ -162,75 +160,53 @@ params:
           - tick: true
           - tick: true
           - tick: false
-  section3:
-    title: Politikalar
-    subtitle: ve örnekleri
-    features: # Icon (from /images/illustrations/icons/___.svg)
-      - icon: cogs
-        title: XML formatında politikalardan oluşurlar, istemciye Kaptan aracılığıyla gönderilip kontrolü sağlanır. Kaptan üzerindeki yapı ise Liman üzerinden yapılır.
-        columns:
-          - list:
-            - li: Paket Yönetim Politikası
-            - li: Servis Yönetim Politikası
-            - li: Zamanlanmış Görevler Politikası
-            - li: Güvenlik Duvarı Politikası
-            - li: Disk Kotası Politikası
-            - li: Kütük Politikası
-            - li: USB Politikası
-            - li: Yazıcı Politikası
-            - li: Ağ Yönetimi Politikası
-            - li: Mozilla Firefox Politikası
-            - li: Conky Politikası
-          - list:
-            - li: Kota Politikası
-            - li: Yetkili Kullanıcı Politikası
-            - li: GRUB Politikası
-            - li: Sertifika Politikası
-            - li: GNOME Politikası
-            - li: Masaüstü Kısayolları Politikası
-            - li: Tayfa Politikası
-            - li: SSSD Politikası
-            - li: Samba Paylaşım Politikası
-            - li: Başlat Menüsü Politikası
-            - li: HAVELSAN Giriş Ekranı Politikası
-          - list:
-            - li: Dosya Transfer Politikası
-            - li: Güç Yönetim Politikası
-            - li: XFCE Politikası
-            - li: Depo Adres Yönetim Politikası
-            - li: Duvar Kağıdı Politikası
-            - li: Merkezi Güncelleme Politikası
-            - li: LibreOffice Politikası
-            - li: NTP Politikası Politikası
-            - li: Klavye Kısayolları Politikası
-            - li: Dosya Yetkileri Politikası
-            - li: SSH Yönetim Politikası
-  section5: false
-  _liman_contact_us: false
+  section_policies:
+    features:
+      - list:
+          - li: Paket Yönetim Politikası
+          - li: Servis Yönetim Politikası
+          - li: Zamanlanmış Görevler Politikası
+          - li: Güvenlik Duvarı Politikası
+          - li: Disk Kotası Politikası
+          - li: Kütük Politikası
+          - li: USB Politikası
+          - li: Yazıcı Politikası
+          - li: Ağ Yönetimi Politikası
+          - li: Mozilla Firefox Politikası
+          - li: Conky Politikası
+      - list:
+          - li: Kota Politikası
+          - li: Yetkili Kullanıcı Politikası
+          - li: GRUB Politikası
+          - li: Sertifika Politikası
+          - li: GNOME Politikası
+          - li: Masaüstü Kısayolları Politikası
+          - li: Tayfa Politikası
+          - li: SSSD Politikası
+          - li: Samba Paylaşım Politikası
+          - li: Başlat Menüsü Politikası
+          - li: HAVELSAN Giriş Ekranı Politikası
+      - list:
+          - li: Dosya Transfer Politikası
+          - li: Güç Yönetim Politikası
+          - li: XFCE Politikası
+          - li: Depo Adres Yönetim Politikası
+          - li: Duvar Kağıdı Politikası
+          - li: Merkezi Güncelleme Politikası
+          - li: LibreOffice Politikası
+          - li: NTP Politikası Politikası
+          - li: Klavye Kısayolları Politikası
+          - li: Dosya Yetkileri Politikası
+          - li: SSH Yönetim Politikası
   footer:
-    # Logo (from /images/logos/___)
-    logo: havelsan-aciklab.png
-    # Social Media Title
-    # Social media links (GitHub, Twitter, etc.). All are optional.
+    logo: footer-logo.svg
     socialmedia:
-    - link: https://github.com/limanmys
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://www.aciklab.com/
-      icon: globe
-    - link: mailto:aciklab@havelsan.com.tr
-      icon: envelope
-    quicklinks:
-      column1:
-        title: "Diğer"
-        links:
-        - text: HAVELSAN
-          link: https://www.havelsan.com.tr/
-        - text: Açıklab
-          link: https://www.aciklab.com/
-        - text: Demo İsteyin
-          relurl: "/iletisim"
-      column2:
-        title: "Yakında"
-        links:
-        - text: Dokümantasyon
+      - link: https://github.com/limanmys
+        icon: "fa fa-github"
+      - link: https://www.aciklab.com/
+        icon: "fa fa-globe"
+      - link: mailto:aciklab@havelsan.com.tr
+        icon: "fa fa-envelope"
+module:
+  imports:
+    path: "github.com/gohugoio/hugo-mod-bootstrap-scss-v4"
