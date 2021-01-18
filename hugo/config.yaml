@@ -68,8 +68,8 @@ params:
         - text: Neden Liman MYS?
           link: "neden-liman-mys"
       image: slide
-    - title: Liman Artık Açık Kaynak
-      subtitle: Liman MYS yazılımı açık kaynak bir yazılımdır ve herkese açıktır. Github sayfamızdan kodları görüntüleyebilir ve kullanmaya hemen başlayabilirsiniz.
+    - title: Açık Kaynak Çekirdek Yazılımı
+      subtitle: Liman MYS çekirdek yazılımı açık kaynak bir yazılımdır ve herkese açıktır. Github sayfamızdan kodları görüntüleyebilir ve kullanmaya hemen başlayabilirsiniz.<br/><br/>Debian depomuzu sisteminize ekleyerek, çok kısa bir sürede desteklenen işletim sistemlerine kurulum yapabilirsiniz.
       logos:
         - image: "aciklab.png"
       buttons:
@@ -199,7 +199,7 @@ params:
           - li: Dosya Yetkileri Politikası
           - li: SSH Yönetim Politikası
   footer:
-    logo: footer-logo.svg
+    logo: footer-logo.png
     socialmedia:
       - link: https://github.com/limanmys
         icon: "fa fa-github"
