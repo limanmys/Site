@@ -67,6 +67,8 @@ params:
       buttons:
         - text: Neden Liman MYS?
           link: "neden-liman-mys"
+        - text: Demo Talebi
+          link: "/iletisim/
       image: slide
     - title: Açık Kaynak Çekirdek Yazılımı
       subtitle: Liman MYS çekirdek yazılımı açık kaynak bir yazılımdır ve herkese açıktır. Github sayfamızdan kodları görüntüleyebilir ve kullanmaya hemen başlayabilirsiniz.<br/><br/>Debian depomuzu sisteminize ekleyerek, çok kısa bir sürede desteklenen işletim sistemlerine kurulum yapabilirsiniz.
