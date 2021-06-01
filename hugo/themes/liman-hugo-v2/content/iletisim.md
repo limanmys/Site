@@ -29,13 +29,22 @@ menu:
 <div class="col-12 col-lg-6">
 <div class="container" id="ff-compose"></div>
 <script type="text/javascript">
+function ready(callback) {
+    if (document.readyState != 'loading') callback();
+    else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+    else document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') callback();
+    });
+}
 function callback() {
-    convert();
-    const render = formFacade.render;
-    formFacade.render = function() {
-        render.apply(this, arguments);
+    ready(function() {
         convert();
-    }
+        const render = formFacade.render;
+        formFacade.render = function() {
+            render.apply(this, arguments);
+            convert();
+        }
+    })
 }
 function convert() {
     $("#ff-compose .ff-item").each(function(_, el) {
@@ -49,6 +58,6 @@ function convert() {
     });
 }
 </script>
-<script async defer src="https://formfacade.com/include/105559820038815642759/form/1FAIpQLSc8ESawlk8mXGjIaq_R23ueu5ARs0Q6TZJR62OFGpYE8I6xyg/bootstrap.js?div=ff-compose&callback=callback"></script>
+<script async defer src="https://formfacade.com/include/112609387266663882077/form/1FAIpQLSc8ESawlk8mXGjIaq_R23ueu5ARs0Q6TZJR62OFGpYE8I6xyg/bootstrap.js?div=ff-compose&callback=callback"></script>
 </div>
 </div>
